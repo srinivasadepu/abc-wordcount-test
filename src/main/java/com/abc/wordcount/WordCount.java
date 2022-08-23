@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class WordCount {
 	
-	private void  printWordOccurances(String input) {
+	public void  printWordOccurances(String input) {
 		HashMap<String, Integer> wordOccurances = null;
 		if(input!=null && !input.isEmpty()) {
 			wordOccurances = new HashMap<String, Integer>();
@@ -22,7 +22,8 @@ public class WordCount {
 			while(tokens.hasMoreTokens()) {
 				word = tokens.nextToken();
 				wordOccurances.put(word.toLowerCase().trim(), wordOccurances.getOrDefault(word.toLowerCase().trim(),0)+1);
-			}		
+			}	
+			//Sort the Words based on their occurances and print the values
 			printMap(sortWordsByCount(wordOccurances));
 		}else {
 			System.out.println("Input is Empty!!");
@@ -30,13 +31,21 @@ public class WordCount {
 		
 	}
 	
+	/**
+	 * Print the words based on thier frequency in descending order
+	 * @param sortedMap
+	 */
 	private void printMap(Map<String, Integer> sortedMap) {
 		if(sortedMap!=null) {
 			sortedMap.forEach((key,val) -> { System.out.println(val + " "+ key);});
 		}
 		
 	}
-	
+	/**
+	 * Method to sort the words based on their frequency
+	 * @param wordOccurances
+	 * @return
+	 */
 	private Map<String, Integer> sortWordsByCount(HashMap<String, Integer>  wordOccurances) {
 		if(wordOccurances==null || wordOccurances.isEmpty()) {
 			return null;
