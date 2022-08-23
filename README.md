@@ -11,7 +11,7 @@ Steps to Execute(On Windows Machine)
       
    Sample command tested 
    
-   >> java -jar WordCountProject-1.0.jar "TThis is the test   for THE interview.    for the successful, interview this program has to be successful"
+   >> java -jar WordCountProject-1.0.jar "This is the test   for THE interview.    for the successful, interview this program has to be successful"
    
    Outpu
       3 the
