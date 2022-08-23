@@ -1,5 +1,5 @@
 Pre-requisites
-  1) This program is compatible with JDK version 8 so you are required to install JDK 8 or higher to execute this program
+  1) This program is compatible with JDK version 8 so you are required to install JDK 8 or higher version to execute this program
 
 Steps to Execute(On Windows Machine) 
   1) Clone or download the abc-wordcount-test program to a <TEMP> folder on machine where you want to run the program
